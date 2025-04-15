@@ -25,13 +25,13 @@ x-environment:
     # XDEBUG_ENABLE: "true"
     PHP_VERSION: ${PHP_VERSION:-8.3}
     # Local database host (not used in production).
-    MARIADB_HOST: mariadb
+    MARIADB_HOST: ${MARIADB_HOST:-mariadb}
     # Local database name (not used in production).
-    MARIADB_DATABASE: lagoon
+    MARIADB_DATABASE: ${MARIADB_DATABASE:-lagoon}
     # Local database user (not used in production).
-    MARIADB_USERNAME: lagoon
+    MARIADB_USERNAME: ${MARIADB_USERNAME:-lagoon}
     # Local database password (not used in production).
-    MARIADB_PASSWORD: lagoon
+    MARIADB_PASSWORD: ${MARIADB_PASSWORD:-lagoon}
     # MySQL configuration.
     MYSQL_COLLATION: ${MYSQL_COLLATION:-utf8mb4_general_ci}
     MYSQL_INNODB_BUFFER_POOL_SIZE: ${MYSQL_INNODB_BUFFER_POOL_SIZE:-512M}
@@ -102,6 +102,8 @@ services:
     image: uselagoon/mysql-8.0:25.4.0
     labels:
       lagoon.type: mariadb
+    # Completely disable SSL to resolve connection issues
+    command: --skip-ssl
     ports:
       - "3306" # exposes the port 3306 with a random local port, find it with `docker compose port mariadb 3306`
     environment:
