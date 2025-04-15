@@ -65,7 +65,7 @@ services:
       dockerfile: .docker/Dockerfile.nginx
       args:
         CLI_IMAGE: *lagoon-project
-        WP_VERSION: ${WP_VERSION:-6.6.2}
+        WP_VERSION: ${WP_VERSION:-6.8}
         PHP_VERSION: ${PHP_VERSION:-8.3}
     labels:
       lagoon.type: nginx-php-persistent
@@ -87,7 +87,7 @@ services:
         CLI_IMAGE: *lagoon-project
         IMAGE_VERSION: *image-version
         PHP_VERSION: ${PHP_VERSION:-8.3}
-        WP_VERSION: ${WP_VERSION:-6.6.2}
+        WP_VERSION: ${WP_VERSION:-6.8}
     labels:
       lagoon.type: nginx-php-persistent
       lagoon.name: nginx # we want this service be part of the nginx pod in Lagoon

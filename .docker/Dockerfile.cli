@@ -1,5 +1,8 @@
 ARG PHP_VERSION=8.3
-FROM uselagoon/php-${PHP_VERSION}-cli:25.4.0
+# When updatating image tag, it breaks wp-cli database commands.
+# Keep at 25.2.0 until https://github.com/salsadigitalauorg/wordpress-lagoon/issues/15
+# is resolved.
+FROM uselagoon/php-${PHP_VERSION}-cli:25.2.0
 
 RUN apk update \
     && apk add --no-cache \
@@ -18,8 +21,8 @@ RUN composer self-update && \
 # Install wp-cli
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp && chmod +x /usr/local/bin/wp
 
-# Add function to .bashrc to run wp-cli with --allow-root
-RUN echo 'wp() { /usr/local/bin/wp "$@" --allow-root; }' >>  ~/.bashrc
+# Add function to .bashrc to run wp-cli with --allow-root and --path=/app/web/wp.
+RUN echo 'wp() { /usr/local/bin/wp "$@" --allow-root --path=/app/web/wp; }' >>  ~/.bashrc
 
 COPY web /app/web
 
