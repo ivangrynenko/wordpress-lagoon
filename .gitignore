@@ -7,3 +7,4 @@ web
 !web/content/themes/.gitkeep
 !web/content/mu-plugins/load.php
 .idea
+.cursor

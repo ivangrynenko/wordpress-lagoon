@@ -1,5 +1,5 @@
 ARG PHP_VERSION=8.3
-FROM uselagoon/php-${PHP_VERSION}-cli:25.1.0
+FROM uselagoon/php-${PHP_VERSION}-cli:25.4.0
 
 RUN apk update \
     && apk add --no-cache \
@@ -11,7 +11,7 @@ COPY composer.* wp.json project.json /app/
 COPY .docker/wordpress/wp-config.php /app/.docker/wordpress/wp-config.php
 
 RUN /bin/rm -Rf /app/web/wp && mkdir -p /app/web/wp
-RUN composer self-update --2 && \
+RUN composer self-update && \
     composer clearcache && \
     composer install --no-dev -n --prefer-dist --working-dir=/app
 
