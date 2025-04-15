@@ -99,11 +99,11 @@ services:
       << : *default-environment # loads the defined environment variables from the top
 
   mariadb:
-    image: uselagoon/mysql-8.0:25.4.0
+    image: uselagoon/mysql-8.0:24.6.0
     labels:
       lagoon.type: mariadb
     # Completely disable SSL to resolve connection issues
-    command: --skip-ssl
+    command: --tls-version=''
     ports:
       - "3306" # exposes the port 3306 with a random local port, find it with `docker compose port mariadb 3306`
     environment:

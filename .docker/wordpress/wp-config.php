@@ -111,6 +111,10 @@ define('DB_CHARSET', getenv('MARIADB_CHARSET') ?: 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', getenv('MARIADB_COLLATE') ?: 'utf8mb4_general_ci');
 
+/** Disable SSL for database connections */
+define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT);
+define('MYSQL_SSL_SET', false);
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
