@@ -51,7 +51,7 @@
     "roots/wordpress": "6.8.0",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.2.0",
-    "salsadigitalauorg/wp_lagoon_logs": "^0.4.0",
+    "salsadigitalauorg/wp_lagoon_logs": "^0.6",
     "vlucas/phpdotenv": "2.6.9",
     "wikimedia/composer-merge-plugin": "dev-master",
     "wpackagist-plugin/akismet": "5.3.7",
