@@ -55,24 +55,8 @@ commands:
   install-site:
     usage: Install a vanilla Wordpress site.
     cmd: |
-      echo "Installing a vanilla Wordpress site as $LOCALDEV_URL"
-      docker compose exec -T cli \
-              composer install --no-dev -n --prefer-dist --working-dir=/app
-      docker compose exec -T cli \
-        wp db reset --yes \
-          --path=/app/${WEBROOT}/wp \
-          --url=$LOCALDEV_URL \
-          --allow-root
-      docker compose exec -T cli \
-        wp core install \
-        --allow-root \
-        --url=$LOCALDEV_URL \
-        --title=$COMPOSE_PROJECT_NAME \
-        --admin_user=admin \
-        --admin_email=admin@example.com \
-        --skip-email \
-        --path=/app/${WEBROOT}/wp
-      ahoy wp theme activate twentytwenty --path=/app/${WEBROOT}/wp
+      echo "Installing a vanilla Wordpress site..."
+      ./scripts/install-site.sh
 
   cli:
     usage: Start a shell inside TEST container.
@@ -166,7 +150,7 @@ entrypoint:
     export APP=${APP:-/app}
     export WEBROOT=${WEBROOT:-web}
     export PHP_VERSION=${PHP_VERSION:-8.3}
-    export WP_VERSION=${WP_VERSION:-6.6.2}
+    export WP_VERSION=${WP_VERSION:-6.8}
     bash -e -c "$0" "$@"
   - '{{cmd}}'
   - '{{name}}'

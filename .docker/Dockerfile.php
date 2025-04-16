@@ -4,7 +4,7 @@ ARG CLI_IMAGE
 
 FROM ${CLI_IMAGE} AS cli
 
-FROM uselagoon/php-${PHP_VERSION}-fpm:25.1.0
+FROM uselagoon/php-${PHP_VERSION}-fpm:25.4.0
 
 RUN apk update \
     && apk add --no-cache \

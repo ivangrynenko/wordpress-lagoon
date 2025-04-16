@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d6864b0bf38d77278849b02dffcb7e3",
+    "content-hash": "a8f44d44f0e7846c367d165cdb494233",
     "packages": [
         {
             "name": "composer/installers",
@@ -411,16 +411,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "6.6.2",
+            "version": "6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
-                "reference": "1bdabdb9171ac5323edbf4792ce353d475467d27"
+                "reference": "c53e4173d239dcaf8889f9f84c0b827a0cf643e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/wordpress/zipball/1bdabdb9171ac5323edbf4792ce353d475467d27",
-                "reference": "1bdabdb9171ac5323edbf4792ce353d475467d27",
+                "url": "https://api.github.com/repos/roots/wordpress/zipball/c53e4173d239dcaf8889f9f84c0b827a0cf643e9",
+                "reference": "c53e4173d239dcaf8889f9f84c0b827a0cf643e9",
                 "shasum": ""
             },
             "require": {
@@ -442,7 +442,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/6.6.2"
+                "source": "https://github.com/roots/wordpress/tree/6.8"
             },
             "funding": [
                 {
@@ -450,7 +450,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-07-16T12:03:00+00:00"
+            "time": "2024-12-15T16:32:37+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -525,22 +525,23 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "6.6.2",
+            "version": "6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "6.6.2"
+                "reference": "6.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/release/wordpress-6.6.2-no-content.zip",
-                "shasum": "b496b8a9bb3c6d20a781344cbe3e189f7fd83871"
+                "url": "https://downloads.wordpress.org/release/wordpress-6.8-no-content.zip",
+                "reference": "6.8",
+                "shasum": "f6bb25f590bb6dc45d21e26de97b589c5f0703bd"
             },
             "require": {
                 "php": ">= 7.2.24"
             },
             "provide": {
-                "wordpress/core-implementation": "6.6.2"
+                "wordpress/core-implementation": "6.8"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -591,7 +592,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2024-09-10T15:25:31+00:00"
+            "time": "2025-04-15T15:45:35+00:00"
         },
         {
             "name": "roots/wp-config",
@@ -740,8 +741,8 @@
             "type": "library",
             "extra": {
                 "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
                 }
             },
             "autoload": {
@@ -978,15 +979,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "5.3.3",
+            "version": "5.3.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/5.3.3"
+                "reference": "tags/5.3.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.5.3.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/akismet.5.3.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -996,15 +997,15 @@
         },
         {
             "name": "wpackagist-plugin/classic-editor",
-            "version": "1.6.5",
+            "version": "1.6.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/classic-editor/",
-                "reference": "tags/1.6.5"
+                "reference": "tags/1.6.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1050,15 +1051,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "5.5.0",
+            "version": "5.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/5.5.0"
+                "reference": "tags/5.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.5.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/redirection.5.5.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1086,15 +1087,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "23.7",
+            "version": "24.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/23.7"
+                "reference": "tags/24.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.23.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.24.9.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1104,15 +1105,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-accessibility",
-            "version": "2.1.12",
+            "version": "2.1.17",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-accessibility/",
-                "reference": "tags/2.1.12"
+                "reference": "tags/2.1.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-accessibility.2.1.12.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-accessibility.2.1.17.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1122,15 +1123,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-smushit",
-            "version": "3.16.6",
+            "version": "3.18.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-smushit/",
-                "reference": "tags/3.16.6"
+                "reference": "tags/3.18.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-smushit.3.16.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-smushit.3.18.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2135,7 +2136,7 @@
     },
     "platform-dev": {},
     "platform-overrides": {
-        "php": "8.3.18"
+        "php": "8.3.19"
     },
     "plugin-api-version": "2.6.0"
 }

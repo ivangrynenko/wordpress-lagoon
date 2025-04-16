@@ -4,7 +4,7 @@ ARG CLI_IMAGE
 
 FROM ${CLI_IMAGE} AS cli
 
-FROM uselagoon/nginx:25.1.0
+FROM uselagoon/nginx:25.4.0
 
 RUN apk add --no-cache tzdata
 
