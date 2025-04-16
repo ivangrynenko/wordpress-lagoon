@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eddb6fc1d15066fc5972c68c1ef701a1",
+    "content-hash": "a8f44d44f0e7846c367d165cdb494233",
     "packages": [
         {
             "name": "composer/installers",
@@ -979,15 +979,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "5.3.3",
+            "version": "5.3.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/5.3.3"
+                "reference": "tags/5.3.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.5.3.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/akismet.5.3.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -997,15 +997,15 @@
         },
         {
             "name": "wpackagist-plugin/classic-editor",
-            "version": "1.6.5",
+            "version": "1.6.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/classic-editor/",
-                "reference": "tags/1.6.5"
+                "reference": "tags/1.6.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1051,15 +1051,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "5.5.0",
+            "version": "5.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/5.5.0"
+                "reference": "tags/5.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.5.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/redirection.5.5.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1087,15 +1087,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "23.7",
+            "version": "24.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/23.7"
+                "reference": "tags/24.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.23.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.24.9.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1105,15 +1105,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-accessibility",
-            "version": "2.1.12",
+            "version": "2.1.17",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-accessibility/",
-                "reference": "tags/2.1.12"
+                "reference": "tags/2.1.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-accessibility.2.1.12.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-accessibility.2.1.17.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1123,15 +1123,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-smushit",
-            "version": "3.16.6",
+            "version": "3.18.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-smushit/",
-                "reference": "tags/3.16.6"
+                "reference": "tags/3.18.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-smushit.3.16.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-smushit.3.18.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
